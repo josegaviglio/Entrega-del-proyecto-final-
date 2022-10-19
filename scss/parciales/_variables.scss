@@ -1,0 +1,37 @@
+$color-principal: crimson;
+
+$color-secundario: rgb(255, 255, 255);
+
+$font-body: 'Anek Odia', sans-serif;
+
+$font-boton:  'Rubik Microbe', cursive;
+
+$font-titulo-2: 'Special Elite', cursive;
+
+$font-titulo: 'Fira Sans', sans-serif;
+
+$font-reserva: 'Koulen', cursive; 
+
+$font-precio: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+
+@mixin flexbox ($direccion, $eje-principal:center, $eje-secundario:center) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+$estilos: (
+        ancho: 320px,
+        alto: 240px    
+    );
+
+// FUENTES NUEVAS QUE ESTAN PIOLA
+
+$fontalumni: 'Alumni Sans Inline One', cursive;
+
+$fontstardos: 'Stardos Stencil', cursive;
+
+$fontbclackopsone: 'Black Ops One', cursive;
+
+$fontrubik: 'Rubik Glitch', cursive;

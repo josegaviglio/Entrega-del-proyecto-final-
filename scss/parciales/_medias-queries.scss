@@ -1,0 +1,413 @@
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+@media screen and (max-width:1400px) {
+    
+/*FAQ QUERIE*/
+
+    .barra-icono {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .formulario {
+        margin: 2rem 0.5rem 2rem 0.5rem;
+        padding: 1rem;
+    }
+
+/*NOSOTROS QUERIE*/
+
+   .querie {
+       padding-right: 0;
+       padding-left: 0;
+   }
+
+   .aside {
+        margin-top: 3rem;
+    }
+
+    .aside__descripcion {
+        font-size: medium;
+    }
+
+    
+    /*NOSOTROS QUERIE*/ 
+
+    .ocultar {
+        display: none;
+    }
+
+/*PRODUCTOS QUERIE*/
+
+    .producto:hover {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width :1023px) {
+/* NAV QUERIE */
+
+    .header__marca {
+        margin-left: 0.5rem;
+        width: 65px;
+        height: 65px;
+    }
+
+    .header__description {
+        font-size: 60%;
+    }
+
+    .nav {
+        display: none;
+
+        &__enlace {
+            color: crimson;
+        }
+
+        &__lista {
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 2rem;
+            font-size: 100%;
+            font-weight: bolder;
+            height: 100%;
+            gap: 3rem;
+        }
+    
+        &__item {
+            margin-left: 40px;
+            padding-left: 0rem;
+            border-left: none;
+    
+            &:hover {
+                transform: scale(100%);
+             }
+    
+             
+            &--close {
+                display: block;
+             }
+    
+            &--1:hover {
+                transform: scale(100%);
+            }
+        }
+    }
+
+    .header__open {
+        display: block;
+        color: rgb(168, 13, 13);
+        font-size: 32px;
+        text-decoration: none;
+        position: absolute;
+        right: 1rem;
+        top: 1.65rem;
+        margin-right: 1rem;
+    }
+
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 65%;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+    #lateral:target {
+        right: 0%;
+    }
+
+/*INICIO QUERIE*/
+
+    .seccion-fondo {
+        background-image: url(../imagenes/foto-publi-48.png);
+        background-position-x: center;
+
+        &__subtitulo {
+            text-align: center;
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 2.8rem;
+        }
+    }    
+
+    .inicio {
+
+        &__titulo {
+            font-size: 35px;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    .centrado {
+        text-align: center;
+    }
+
+ /*RESERVAS QUERIE*/
+
+    .formulario {
+        margin: 2rem 1rem 4rem 1rem;
+        padding: 1rem;
+    }
+
+ /*NOSOTROS QUERIE*/
+
+    .seccion-fondo3--2__titulo {
+        font-size: xx-large;
+    }
+
+ /*FOOTER QUERIE*/
+
+
+ .footer {
+        
+    &__boton {
+        padding: 0.2rem;
+
+        &:hover {
+            transform: scale(100%);
+        }
+    }
+
+    &__redes {
+        margin: 0.2rem;
+        gap: 28px;
+
+    &--red-social {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            transform: scale(100%);
+        }
+    }
+
+    &--red-social1 {
+        width: 35px;
+        height: 35px;
+
+        &:hover {
+            transform: scale(100%);
+        }
+    }
+    }
+
+    &__image {
+        margin: 1rem;
+        width: 40px;
+        height: 40px;
+        order: 1;
+    }
+
+    &__map {
+        width: 280px;
+    }
+    
+    &__contacto {
+        position: unset;
+    }
+
+    &__suscripcion {
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+    }
+
+    &__datos {
+        padding-top: 0;
+        height: 300px;
+        font-size: small;
+    }
+
+    &__sugerencia {
+        text-align: center;
+    }
+  } 
+}
+
+@media screen and (max-width: 991px) {
+
+   /* FOOTER QUERIE */
+    
+    .footer__contacto {
+        @include flexbox (column);
+        padding-top: 0;
+    }
+
+    .footer__map {
+        height: 400px;
+    }
+
+   /*RESERVAS QUERIE*/
+
+    .fila {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .carrusel__parrafo {
+        margin-top: 0;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .video__parrafo {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    
+     /*INICIO QUERIE*/
+
+     .seccion-fondo {
+        min-height: 80vh;
+
+        &__row {
+            min-height: 80vh;
+        }
+
+        &__subtitulo {
+            font-size: 35px;
+        }
+    }
+
+    /*RESERVAS QUERIE*/
+
+    .carrusel__parrafo {
+        font-size: 15px;
+    }
+
+    .video__parrafo {
+        font-size: 15px;
+    }
+
+    /*PAGINAS QUERIE*/
+   
+    .seccion-fondo2 {
+        min-height: 80vh;
+
+        &__row {
+            min-height: 80vh;
+        }
+
+        &__subtitulo {
+            font-size: 35px;
+        }
+    }
+
+    .separador {
+        min-height: 20vh;
+    }
+
+     @keyframes coder {
+        0% {
+            transform: scale(80%) translateX(0px);
+        }
+    
+        50% {
+            transform: scale(60%) translateX(0px);
+        }
+    
+        100% {
+            transform: scale(80%) translateX(0px);
+        }
+    }
+
+    /*FAQ QUERIE*/
+
+   .barra-busqueda {
+       font-size: 200%;
+       padding: 1rem;
+       width: 100%;
+       text-align: center;
+   }
+}
+
+@media screen and (max-width: 350px) {
+    
+    /*INICIO QUERIE*/
+
+    .seccion-fondo {
+       min-height: 75vh;
+
+       &__row {
+           min-height: 75vh;
+       }
+       
+       &__subtitulo {
+           color: $color-secundario;
+           font-size: 35px;
+
+           &:hover {
+               display: none;
+           }
+        
+       }
+       &__jam {
+           font-size: 40px;
+           left: 46%;
+       }
+   }
+
+   /*RESERVAS QUERIE*/
+
+   .formulario {
+       font-size: 15px;
+
+       &__boton {
+           margin-bottom: 0.5rem;
+       }
+
+       &__boton--2 {
+           margin-top: 0.5rem;
+           padding: 3px 9px 3px 9px;
+       }
+   }
+
+   /*NOSOTROS SUBTITULO*/ 
+
+   .nosotros__subtitulo {
+       margin-right: 0;
+       font-size: 20px;
+   }
+
+   .nosotros__descripcion {
+       margin-right: 0;
+   }
+
+   /*PRODUCTOS QUERIE*/ 
+
+   .producto__precio {
+       padding: 3px 9px 3px 9px;
+       font-size: 15px;
+       margin-right: 0.4rem;
+   }
+
+   /*PAGINAS QUERIE*/
+
+   .seccion-fondo2 {
+    min-height: 75vh;
+
+    &__row {
+        min-height: 75vh;
+    }
+}
+
+   .separador {
+       min-height: 25vh;
+   }
+}
+

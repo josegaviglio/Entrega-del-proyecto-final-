@@ -1,0 +1,956 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+ul li {
+  list-style: none; }
+
+body {
+  font-family: "Stardos Stencil", cursive;
+  scrollbar-color: crimson;
+  scrollbar-width: none; }
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: black; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border-radius: 10px;
+  border-right: 4px solid rgba(255, 255, 255, 0.2); }
+
+/*HEADER CODE*/
+/*HEADER CODE*/
+/*HEADER CODE*/
+/*HEADER CODE*/
+/*HEADER CODE*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  width: 100%;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px); }
+  .header__open {
+    display: none; }
+  .header__marca {
+    margin-left: 1rem;
+    width: 100px;
+    height: 100px; }
+  .header__image {
+    width: 100%;
+    height: 100%; }
+  .header__description {
+    padding: 15px;
+    color: white;
+    width: 5%;
+    margin-bottom: 0rem; }
+
+.nav {
+  position: absolute;
+  right: 0rem;
+  padding-right: 2rem; }
+  .nav__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 0rem; }
+  .nav__item {
+    padding-left: 1.5rem;
+    margin-left: 30px;
+    border-left: solid white;
+    transition: 0.5s; }
+    .nav__item:hover {
+      transform: scale(120%); }
+    .nav__item--close {
+      display: none; }
+    .nav__item--1 {
+      margin-left: 40px;
+      transition: 0.5s; }
+      .nav__item--1:hover {
+        transform: scale(120%); }
+  .nav__enlace {
+    color: crimson;
+    text-decoration: none; }
+    .nav__enlace:hover {
+      color: white; }
+
+/*FOOTER CODE*/
+/*FOOTER CODE*/
+/*FOOTER CODE*/
+/*FOOTER CODE*/
+/*FOOTER CODE*/
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 260px; }
+  .footer__jam {
+    margin-right: 10px;
+    display: inline;
+    font-size: 20px; }
+  .footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__image {
+    margin-top: 1.5rem;
+    width: 60px;
+    height: 60px; }
+  .footer__row {
+    min-height: 200px; }
+  .footer__suscripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem; }
+  .footer__sugerencia {
+    font-size: 90%; }
+  .footer__boton {
+    background-color: crimson;
+    color: white;
+    font-family: "Black Ops One", cursive;
+    padding: 5px 12px 5px 12px;
+    transition: 1s;
+    margin-left: 1rem; }
+    .footer__boton:hover {
+      transform: scale(120%); }
+  .footer__datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    justify-content: space-around; }
+  .footer__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem 3rem 1.5rem 3rem; }
+    .footer__contacto--sugerencia {
+      margin: 1rem;
+      font-size: 70%; }
+  .footer__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    order: -1; }
+    .footer__redes--red-social {
+      width: 50px;
+      height: 50px;
+      transition: 0.5s; }
+      .footer__redes--red-social:hover {
+        transform: scale(140%); }
+    .footer__redes--red-social1 {
+      width: 45px;
+      height: 45px;
+      transition: 0.5s; }
+      .footer__redes--red-social1:hover {
+        transform: scale(140%); }
+    .footer__redes--image {
+      width: 100%;
+      height: 100%; }
+  .footer__map {
+    width: 320px;
+    height: 240px; }
+
+.seccion-fondo {
+  background-image: url(../imagenes/Facu-16.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 88vh;
+  position: relative; }
+  .seccion-fondo__subtitulo {
+    font-size: 45px;
+    padding: 1.3rem;
+    font-family: "Rubik Glitch", cursive;
+    transition: 1s; }
+    .seccion-fondo__subtitulo:hover {
+      box-shadow: 0px 0px 20px black; }
+  .seccion-fondo__row {
+    min-height: 88vh; }
+  .seccion-fondo__jam {
+    font-size: 50px;
+    color: crimson;
+    position: absolute;
+    bottom: 1rem;
+    left: 48%; }
+
+.separador {
+  width: 100%;
+  min-height: 12vh;
+  background-color: black; }
+  .separador__frase {
+    color: white;
+    font-family: "Stardos Stencil", cursive;
+    text-align: center;
+    font-size: 30px;
+    padding: 1.5rem;
+    margin: 0;
+    transition: 0.2s; }
+    .separador__frase:hover {
+      color: crimson; }
+
+.seccion-fondo2, .seccion-fondo2--1, .seccion-fondo2--2, .seccion-fondo2--3 {
+  background-image: url(../imagenes/1a.svg);
+  background-size: cover;
+  width: 100%;
+  min-height: 88vh;
+  position: relative; }
+  .seccion-fondo2__titulo {
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-family: "Black Ops One", cursive; }
+  .seccion-fondo2__row {
+    min-height: 88vh; }
+  .seccion-fondo2__jam {
+    font-size: 40px;
+    color: crimson;
+    position: absolute;
+    bottom: 1rem;
+    left: 48%; }
+
+.seccion-fondo2--1 {
+  background-image: url(../imagenes/2b.svg); }
+
+.seccion-fondo2--2 {
+  background-image: url(../imagenes/1b.svg); }
+
+.seccion-fondo2--3 {
+  background-image: url(../imagenes/2a.svg); }
+
+.aconcagua {
+  background-image: url(../imagenes/Aconcagua2016.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  font-size: large;
+  padding-top: 5rem; }
+  .aconcagua__titulo {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    padding: 1rem; }
+
+/*MAIN INICIO CODE*/
+/*MAIN INICIO CODE*/
+/*MAIN INICIO CODE*/
+/*MAIN INICIO CODE*/
+/*MAIN INICIO CODE*/
+.inicio {
+  background-image: url(../imagenes/Aconcagua2016.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 400px; }
+  .inicio__titulo {
+    color: crimson;
+    font-size: 60px;
+    font-family: "Black Ops One", cursive;
+    padding: 7rem 0rem 1rem 0rem;
+    text-align: center;
+    width: 100%; }
+  .inicio__boton {
+    background-color: crimson;
+    color: white;
+    font-family: "Black Ops One", cursive;
+    font-size: larger;
+    padding: 10px 12px 10px 12px;
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+  .inicio__row {
+    min-height: 400px; }
+
+.espaciado {
+  margin-top: 25rem; }
+
+.centrado {
+  text-align: center; }
+
+/*MAIN RESERVAS CODE*/
+/*MAIN RESERVAS CODE*/
+/*MAIN RESERVAS CODE*/
+/*MAIN RESERVAS CODE*/
+/*MAIN RESERVAS CODE*/
+.formulario {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 30px;
+  line-height: 2rem;
+  background-color: white;
+  color: black;
+  font-family: "Black Ops One", cursive; }
+  .formulario__boton {
+    background-color: white;
+    color: grey;
+    font-family: "Black Ops One", cursive;
+    padding: 5px 12px 5px 12px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 1rem; }
+  .formulario__boton--2 {
+    background-color: crimson;
+    color: white;
+    font-family: "Black Ops One", cursive;
+    padding: 5px 12px 5px 12px;
+    transition: 1s; }
+    .formulario__boton--2:hover {
+      transform: scale(120%); }
+
+::placeholder {
+  color: grey; }
+
+.fondo {
+  background-color: white;
+  margin-top: 5rem; }
+
+.fondo--1 {
+  background-color: black; }
+
+.fondo--2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px); }
+
+.servicio {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .servicio__imagen {
+    object-fit: cover;
+    height: 300px; }
+  .servicio__titulo {
+    color: crimson;
+    background-color: black;
+    font-family: "Rubik Glitch", cursive; }
+    .servicio__titulo--2 {
+      font-family: "Rubik Glitch", cursive;
+      color: crimson; }
+  .servicio__precio {
+    align-self: flex-end;
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+    width: 120px; }
+  .servicio__font {
+    font-family: "Rubik Glitch", cursive; }
+
+.relative {
+  position: relative;
+  padding-top: 56.25%; }
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .video__parrafo {
+    font-style: italic;
+    font-family: "Black Ops One", cursive;
+    font-size: 25px;
+    margin-top: 4rem; }
+
+.carrusel__parrafo {
+  margin-top: 5rem;
+  color: white;
+  font-family: "Black Ops One", cursive;
+  font-size: 25px;
+  text-align: right; }
+
+.accordion-button:not(.collapsed) {
+  color: crimson;
+  background-color: black; }
+
+.accordion-button:focus {
+  border-color: crimson;
+  box-shadow: crimson; }
+
+.fila {
+  padding: 5rem 0rem 5rem 0rem; }
+
+.reservas {
+  margin-top: 5rem;
+  border: 2px solid black; }
+  .reservas__titulo {
+    padding: 1rem;
+    background-color: black;
+    font-family: "Black Ops One", cursive;
+    color: crimson;
+    margin-bottom: 0rem; }
+  .reservas__subtitulo {
+    color: crimson; }
+  .reservas__descripcion {
+    background-color: white;
+    text-align: justify;
+    padding: 1.5rem;
+    margin-bottom: 0rem; }
+
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+.nosotros__row {
+  min-height: 705px; }
+
+.nosotros__titulo {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+  padding: 1rem; }
+
+.nosotros__subtitulo {
+  text-align: justify;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 30px 6px black; }
+
+.nosotros__descripcion {
+  text-align: justify;
+  background-color: rgba(243, 243, 243, 0.3);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: black;
+  padding: 2rem 2rem 5rem 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 0px 0px 30px 6px black;
+  transition: 1s; }
+  .nosotros__descripcion:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
+
+.nosotros__carrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex start;
+  gap: 1rem;
+  overflow: auto;
+  scrollbar-color: crimson;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory; }
+  .nosotros__carrusel::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .nosotros__carrusel::-webkit-scrollbar-thumb {
+    background-color: crimson;
+    border-radius: 5px; }
+  .nosotros__carrusel::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+  .nosotros__carrusel--imagen {
+    background-color: grey;
+    width: 300px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    scroll-snap-align: start; }
+
+.aside {
+  background-color: black;
+  color: white;
+  font-size: medium;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 30px 6px black; }
+  .aside__titulo {
+    font-style: italic;
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+    font-weight: bold; }
+  .aside__descripcion {
+    text-align: justify;
+    padding: 1rem;
+    font-weight: bold; }
+  .aside__imagen {
+    object-fit: cover;
+    width: 100%; }
+
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+.borroso {
+  background-color: rgba(244, 235, 235, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  margin-top: 5rem; }
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: 1s; }
+  .producto:hover {
+    transform: scale(110%); }
+  .producto__imagen {
+    width: 100%;
+    object-fit: cover; }
+  .producto__titulo {
+    color: black;
+    font-size: 150%;
+    align-self: flex-start;
+    padding-top: 1rem;
+    font-weight: bold; }
+  .producto__descripcion {
+    color: black;
+    text-align: justify;
+    width: 100%;
+    font-weight: bold; }
+  .producto__precio {
+    color: white;
+    background-color: crimson;
+    font-family: "Black Ops One", cursive;
+    padding: 5px 12px 5px 12px;
+    align-self: flex-end; }
+  .producto__gradiente {
+    background: #ffa5a5;
+    background: linear-gradient(to bottom, crimson 35%, #f4ebeb 100%); }
+
+.botones-gradiente {
+  background-color: crimson; }
+
+/*MAIN FAQ CODE*/
+/*MAIN FAQ CODE*/
+/*MAIN FAQ CODE*/
+/*MAIN FAQ CODE*/
+/*MAIN FAQ CODE*/
+.seccion-fondo4--2 {
+  font-size: large;
+  padding-top: 4rem; }
+
+.barra-busqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 350%;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 2.5rem; }
+
+.barra-busqueda--2 {
+  margin: 2rem;
+  font-size: 60%;
+  text-align: center;
+  border-radius: 15px; }
+
+.preguntas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 1rem; }
+  .preguntas__pregunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background-color: black;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    transition: 1s; }
+    .preguntas__pregunta:hover {
+      transform: scale(120%); }
+    .preguntas__pregunta--titulo {
+      text-align: center;
+      color: crimson;
+      font-size: large;
+      font-weight: bolder; }
+    .preguntas__pregunta--descripcion {
+      color: white;
+      text-align: justify;
+      font-weight: bolder; }
+
+.animacion {
+  animation-name: coder;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes coder {
+  0% {
+    transform: scale(100%); }
+  50% {
+    transform: scale(115%); }
+  100% {
+    transform: scale(100%); } }
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-6 10:49:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-16 14:33:39
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px); } }
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px); } }
+
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+/*MEDIA QUERIE CODE*/
+@media screen and (max-width: 1400px) {
+  /*FAQ QUERIE*/
+  .barra-icono {
+    display: none; } }
+
+@media screen and (max-width: 1300px) {
+  .formulario {
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    padding: 1rem; }
+  /*NOSOTROS QUERIE*/
+  .querie {
+    padding-right: 0;
+    padding-left: 0; }
+  .aside {
+    margin-top: 3rem; }
+  .aside__descripcion {
+    font-size: medium; }
+  /*NOSOTROS QUERIE*/
+  .ocultar {
+    display: none; }
+  /*PRODUCTOS QUERIE*/
+  .producto:hover {
+    transform: scale(100%); } }
+
+@media screen and (max-width: 1023px) {
+  /* NAV QUERIE */
+  .header__marca {
+    margin-left: 0.5rem;
+    width: 65px;
+    height: 65px; }
+  .header__description {
+    font-size: 60%; }
+  .nav {
+    display: none; }
+    .nav__enlace {
+      color: crimson; }
+    .nav__lista {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 2rem;
+      font-size: 100%;
+      font-weight: bolder;
+      height: 100%;
+      gap: 3rem; }
+    .nav__item {
+      margin-left: 40px;
+      padding-left: 0rem;
+      border-left: none; }
+      .nav__item:hover {
+        transform: scale(100%); }
+      .nav__item--close {
+        display: block; }
+      .nav__item--1:hover {
+        transform: scale(100%); }
+  .header__open {
+    display: block;
+    color: #a80d0d;
+    font-size: 32px;
+    text-decoration: none;
+    position: absolute;
+    right: 1rem;
+    top: 1.65rem;
+    margin-right: 1rem; }
+  #lateral {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 65%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    z-index: 100;
+    transition: right 1s; }
+  #lateral:target {
+    right: 0%; }
+  /*INICIO QUERIE*/
+  .seccion-fondo {
+    background-image: url(../imagenes/foto-publi-48.png);
+    background-position-x: center; }
+    .seccion-fondo__subtitulo {
+      text-align: center;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 2.8rem; }
+  .inicio__titulo {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 1.5rem; }
+  .centrado {
+    text-align: center; }
+  /*RESERVAS QUERIE*/
+  .formulario {
+    margin: 2rem 1rem 4rem 1rem;
+    padding: 1rem; }
+  /*NOSOTROS QUERIE*/
+  .seccion-fondo3--2__titulo {
+    font-size: xx-large; }
+  /*FOOTER QUERIE*/
+  .footer__boton {
+    padding: 0.2rem; }
+    .footer__boton:hover {
+      transform: scale(100%); }
+  .footer__redes {
+    margin: 0.2rem;
+    gap: 28px; }
+    .footer__redes--red-social {
+      width: 40px;
+      height: 40px; }
+      .footer__redes--red-social:hover {
+        transform: scale(100%); }
+    .footer__redes--red-social1 {
+      width: 35px;
+      height: 35px; }
+      .footer__redes--red-social1:hover {
+        transform: scale(100%); }
+  .footer__image {
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+    order: 1; }
+  .footer__map {
+    width: 280px; }
+  .footer__contacto {
+    position: unset; }
+  .footer__suscripcion {
+    justify-content: center;
+    align-items: center;
+    font-size: 80%; }
+  .footer__datos {
+    padding-top: 0;
+    height: 300px;
+    font-size: small; }
+  .footer__sugerencia {
+    text-align: center; } }
+
+@media screen and (max-width: 991px) {
+  /* FOOTER QUERIE */
+  .footer__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0; }
+  .footer__map {
+    height: 400px; }
+  /*RESERVAS QUERIE*/
+  .fila {
+    padding: 3rem 1rem 3rem 1rem; }
+  .carrusel__parrafo {
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2rem; }
+  .video__parrafo {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 20px; } }
+
+@media screen and (max-width: 690px) {
+  /*INICIO QUERIE*/
+  .seccion-fondo {
+    min-height: 80vh; }
+    .seccion-fondo__row {
+      min-height: 80vh; }
+    .seccion-fondo__subtitulo {
+      font-size: 35px; }
+  /*RESERVAS QUERIE*/
+  .carrusel__parrafo {
+    font-size: 15px; }
+  .video__parrafo {
+    font-size: 15px; }
+  /*PAGINAS QUERIE*/
+  .seccion-fondo2, .seccion-fondo2--1, .seccion-fondo2--2, .seccion-fondo2--3 {
+    min-height: 80vh; }
+    .seccion-fondo2__row {
+      min-height: 80vh; }
+    .seccion-fondo2__subtitulo {
+      font-size: 35px; }
+  .separador {
+    min-height: 20vh; }
+  @keyframes coder {
+    0% {
+      transform: scale(80%) translateX(0px); }
+    50% {
+      transform: scale(60%) translateX(0px); }
+    100% {
+      transform: scale(80%) translateX(0px); } }
+  /*FAQ QUERIE*/
+  .barra-busqueda {
+    font-size: 200%;
+    padding: 1rem;
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 350px) {
+  /*INICIO QUERIE*/
+  .seccion-fondo {
+    min-height: 75vh; }
+    .seccion-fondo__row {
+      min-height: 75vh; }
+    .seccion-fondo__subtitulo {
+      color: white;
+      font-size: 35px; }
+      .seccion-fondo__subtitulo:hover {
+        display: none; }
+    .seccion-fondo__jam {
+      font-size: 40px;
+      left: 46%; }
+  /*RESERVAS QUERIE*/
+  .formulario {
+    font-size: 15px; }
+    .formulario__boton {
+      margin-bottom: 0.5rem; }
+    .formulario__boton--2 {
+      margin-top: 0.5rem;
+      padding: 3px 9px 3px 9px; }
+  /*NOSOTROS SUBTITULO*/
+  .nosotros__subtitulo {
+    margin-right: 0;
+    font-size: 20px; }
+  .nosotros__descripcion {
+    margin-right: 0; }
+  /*PRODUCTOS QUERIE*/
+  .producto__precio {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    margin-right: 0.4rem; }
+  /*PAGINAS QUERIE*/
+  .seccion-fondo2, .seccion-fondo2--1, .seccion-fondo2--2, .seccion-fondo2--3 {
+    min-height: 75vh; }
+    .seccion-fondo2__row {
+      min-height: 75vh; }
+  .separador {
+    min-height: 25vh; } }

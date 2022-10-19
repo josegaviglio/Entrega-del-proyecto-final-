@@ -1,0 +1,62 @@
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+/*MAIN PRODUCTOS CODE*/
+
+.borroso {
+    background-color: rgba(244,235,235,0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter:blur(15px);
+    margin-top: 5rem
+}
+
+.producto {
+    @include flexbox(column, center, flex-end);
+    padding: 1.5rem;
+    border-radius: 15px; 
+    transition: 1s;
+
+    &:hover {
+        transform: scale(110%);
+    }
+
+    &__imagen {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    &__titulo {
+        color: rgb(0, 0, 0);
+        font-size: 150%;
+        align-self: flex-start;
+        padding-top: 1rem;
+        font-weight: bold;
+    }
+    
+    &__descripcion {
+        color: rgb(0, 0, 0);
+        text-align: justify;
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    &__precio {
+        color: rgb(255, 255, 255);
+        background-color: $color-principal;
+        font-family: $fontbclackopsone;
+        padding: 5px 12px 5px 12px;
+        align-self: flex-end;
+    }
+
+    
+    &__gradiente {
+        background: rgb(255,165,165);
+        background: linear-gradient(to bottom, crimson 35%, rgba(244,235,235,1) 100%);
+}
+    
+}
+
+.botones-gradiente {
+    background-color: crimson;
+}

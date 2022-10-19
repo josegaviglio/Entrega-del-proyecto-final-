@@ -1,0 +1,110 @@
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+/*MAIN NOSOTROS CODE*/
+
+.nosotros {
+
+    &__row {
+        min-height: 705px;
+    }
+
+    &__titulo {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    &__subtitulo {
+        text-align: justify;
+        background-color: rgb(0, 0, 0);
+        color: $color-secundario;
+        padding: 2rem;
+        margin-right: 1rem;
+        font-weight: bold;
+        box-shadow: 0px 0px 30px 6px rgb(0, 0, 0);
+    }
+    
+    &__descripcion {
+        text-align: justify;
+        background-color: rgba(243, 243, 243, 0.3);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter:blur(12px);
+        color: rgb(0, 0, 0);
+        padding: 2rem 2rem 5rem 2rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        font-size: large;
+        font-weight: bold;
+        box-shadow: 0px 0px 30px 6px rgb(0, 0, 0);
+        transition: 1s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__carrusel {
+        @include flexbox(row,flex-start ,flex start);
+        gap: 1rem;
+        overflow: auto;
+        scrollbar-color: $color-principal;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+    
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-principal;
+            border-radius: 5px;
+        }
+        
+        &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+    
+        &--imagen {
+            background-color: grey;
+            width: 300px;
+            object-fit: cover;
+            height: 200px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            scroll-snap-align: start;
+        }
+    }
+}
+
+
+
+.aside {
+    background-color: rgb(0, 0, 0);
+    color: $color-secundario;
+    font-size: medium;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 30px 6px rgb(0, 0, 0);
+
+    &__titulo {
+        font-style: italic;
+        padding: 1rem 0rem 1rem 0rem;
+        text-align: center;
+        font-weight: bold;
+    }
+     &__descripcion {
+         text-align: justify;
+         padding: 1rem;
+         font-weight: bold;
+    }
+    &__imagen {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
